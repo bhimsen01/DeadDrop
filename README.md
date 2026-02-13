@@ -1,8 +1,21 @@
 # DeadDrop
 
-DeadDrop is a web application where users can post real-world tasks
-with a reward/money, and volunteers can complete those tasks and earn rewards by
-submitting proof.
+DeadDrop is an economy-enabled task marketplace where users post real-world missions with attached rewards, and other users complete them by submitting verifiable proof.
+
+## Vision
+DeadDrop explores how decentralized gig-style micro-tasks can be coordinated through reputation, verification workflows, and wallet mechanics.
+The goal is to design infrastructure where:
+- Task creators and task executors are both anonymous
+- No regulations
+- admin authorization for rewards
+
+## Core Idea
+- Director funds tasks
+- Agents executes the task
+- Submits proof of completion
+- Operator verifies completion
+- Credits are transferred
+- All parties anonymous
 
 ## Technologies
 - Java Servlets
@@ -13,12 +26,13 @@ submitting proof.
 - MySQL
 
 ## Roles
-- Director - who gives tasks
-- Executor - who does tasks
+- Director - funds tasks
+- Executor - executes tasks
 - Operator - admin who approves tasks and payments
 
 ## Features (MVP)
 - User login using session
+- Secure authentication with salt
 - Create tasks with reward
 - Claim and complete tasks
 - Submit proof (image + text)
@@ -32,4 +46,4 @@ submitting proof.
 - JSP views inside WEB-INF
 
 ## Notes
-Payments and users are simulated.
+DeadDrop is a simulation platform built for learning and experimentation.
