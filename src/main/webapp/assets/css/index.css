@@ -1,0 +1,221 @@
+:root{
+    /* font size */
+    --base-font-size: 16px;
+
+    /* colors */
+    --white: rgb(245, 245, 247);
+    --bg-black: rgb(29, 29, 31);
+    --grey-light: rgb(200, 200, 205);
+    --primary-btn-bg: rgba(0, 0, 0, 0.4);
+    --primary-btn-hover: rgba(49, 49, 51, 0.8);
+    --secondary-btn-bg: rgba(245, 245, 247, 0.8);
+    --secondary-btn-hover: rgba(225, 225, 227, 0.8);
+
+    /* spacing */
+    --spacing-small: 12px;
+    --spacing-normal: 16px;
+    --spacing-medium: 24px;
+    --spacing-large: 32px;
+    --spacing-xlarge-top: 160px;
+
+    /* border radius */
+    --primary-card-radius: 24px;
+    --semi-circle-radius: 9999px;
+
+    /* border */
+    --border: 0.2px solid rgba(255, 255, 255, 0.4);
+
+    /* backdop filter */
+    --backdrop-blur: blur(8px) saturate(180%);
+
+    /* card hover */
+    --card-hover-scale: scale(1.02);
+}
+
+
+/* global body */
+body{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: rgb(0, 0, 0);
+    color: var(--white);
+}
+
+/* navigation bar */
+nav{
+    width: fit-content;
+    display: flex;
+    backdrop-filter: var(--backdrop-blur);
+    border-bottom: var(--border);
+    border-radius: var(--semi-circle-radius);
+    padding: var(--spacing-small) var(--spacing-medium);
+    align-items: center;
+    gap: var(--spacing-xlarge-top);
+    position: fixed;
+    z-index: 4;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* logo and name */
+.logo-and-name{
+    display: flex;
+    align-items: center;
+    height: 24px;
+    gap: var(--spacing-normal);
+}
+
+#logo-img{
+    object-fit: cover;
+    height: 48px;
+    width: 48px;
+    border-radius: 999px;
+}
+
+.logo-name{
+    user-select: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+/* login and sgnup */
+.navigation{
+    display: flex;
+    gap: var(--spacing-normal);
+}
+
+.nav-btn{
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding: var(--spacing-normal) var(--spacing-medium);
+    font-weight: 500;
+    border-radius:var(--semi-circle-radius);
+    border: none;
+    border-bottom: var(--border);
+}
+
+.primary-btn{
+    background-color: var(--primary-btn-bg);
+    color: var(--white);
+}
+
+.primary-btn:hover{
+    background-color: var(--primary-btn-hover);
+    cursor: pointer;
+}
+
+.secondary-btn{
+    background-color: var(--secondary-btn-bg);
+}
+
+.secondary-btn:hover{
+    background-color: var(--secondary-btn-hover);
+    cursor: pointer;
+}
+
+
+/* main content */
+.main{
+    margin: auto;
+    width: 80%;
+}
+
+
+/* descrpton section*/
+.desc{
+    text-align: center;
+    margin-top: var(--spacing-xlarge-top);
+}
+
+.slogan{
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.slogan-sub{
+    color: var(text);
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+
+/* explore section */
+.explore{
+    margin:48px 0 48px 0;
+    border-radius: var(--primary-card-radius);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    height: 600px;
+}
+
+.explore:hover{
+    transform: var(--card-hover-scale);
+}
+
+.explore-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-black);
+    color: var(--grey-light);
+    padding: var(--spacing-normal);
+}
+
+.footer-section{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-heading-small{
+    color: var(--white);
+    font-weight: bold;
+}
+
+.footer-right{
+    display: flex;
+    gap: var(--spacing-large);
+}
+
+.footer-link{
+    text-decoration: none;
+    color: var(--grey-light);
+}
+
+.footer-link:hover{
+    text-decoration: underline;
+}
+
+.theme-toggle{
+    border: 0;
+    background: none;
+    pad: 0;
+}
+.theme-toggle:hover{
+    background: none;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.theme{
+    height: 24px;
+    width: 24px;
+}

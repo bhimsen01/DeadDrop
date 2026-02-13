@@ -1,0 +1,59 @@
+.credit{
+    margin: var(--spacing-xlarge) 0 0 0;
+    background: linear-gradient(90deg,rgba(35, 35, 35, 1) 0%, rgba(84, 134, 49, 1) 50%, rgba(35, 36, 36, 1) 100%);
+    border-radius: var(--primary-card-radius);
+    padding: var(--spacing-medium);
+}
+
+.credit-store{
+    margin: var(--spacing-large) 0 var(--spacing-xlarge) 0;
+}
+
+.credit-store-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2em;
+    margin-bottom: var(--spacing-large);
+}
+
+.credit-store-card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-black);
+    border-radius: var(--primary-card-radius);
+    overflow: hidden;
+    padding: var(--spacing-medium);
+    transition: transform 0.3s ease;
+}
+
+.credit-store-card:hover{
+    transform: var(--card-hover-scale);
+}
+
+.credit-store-card-body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.purchase-primary-btn{
+    width: 100%;
+    letter-spacing: 0.2px;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--white);
+    padding: 12px 0;
+    border: none;
+    background-color: var(--primary-btn-bg);
+    border-radius: var(--semi-circle-radius);
+}
+
+.purchase-primary-btn:hover{
+    background-color: var(--primary-btn-hover);
+    cursor: pointer;
+}
